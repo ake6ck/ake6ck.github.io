@@ -1,0 +1,97 @@
+* {
+    margin: 0
+}
+
+a {
+    animation-delay: 0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    color: lightgrey;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+div {
+    margin-top: min(10vw, 10vh);
+    margin-right: min(10vw, 10vh);    
+    margin-bottom: 0;
+    margin-left: min(10vw, 10vh);
+}
+
+html {
+    height: 100%;
+}
+
+h1 {
+    color: lightgrey;
+    font-family: helvetica;
+    width: fit-content;
+}
+
+h2 {
+    color: lightgrey;
+    font-family: helvetica;
+    width: fit-content;
+}
+
+h3 {
+    color: lightgrey;
+    font-family: helvetica;
+    width: fit-content;
+}
+
+p {
+    color: lightgrey;
+    font-family: helvetica;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.cursorbox {
+    background: lightgrey;
+    border-radius: 50%;
+    height: min(20vw, 20vh);;
+    margin: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition-duration: .1s;
+    width: min(20vw, 20vh);;
+    position: absolute;
+}
+
+.footer {
+    margin: 0;
+}
+
+.header {
+    margin: 0;
+}
+
+.main {
+    flex: 1;
+    margin: 0;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: min(10vw, 10vh);
+}
