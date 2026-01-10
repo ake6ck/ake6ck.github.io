@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000000;
+}
+
+body {
+    aspect-ratio: 9 / 16;
+    background-color: #ffffff;
+    font-family: Archivo, sans-serif;
+    font-size: 2vh;
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    margin: 5vh;
+}
+
+.mottoboxbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.mottobox {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul {
+    list-style-type: none;
+}  
+
+.navbar li {
+    background-color: #e7e7e7;
+    border: .2vh solid;
+    border-radius: 1vh;
+    margin-right: .5vh;
+    padding: .8vh;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.timebox {
+    margin: auto 0 auto 0;
+}
+
+.titlebox {
+    display: flex;
+    flex-direction: row;
+}
+
+.titleboxbox {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .6vh;
+    justify-content: space-between;
+}
+
+#cursorbox {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 20vh;
+    margin: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width .5s cubic-bezier(.5, -.2, .3, 1.2), height .5s cubic-bezier(.5, -.2, .3, 1.2), left .1s linear, top .1s linear;
+    width: 20vh; 
+    position: fixed;
+    z-index: 9999;
+}
+
+#icon {
+    aspect-ratio: 1;
+    background-color: #000000;
+    border-radius: 0.6vh;
+    height: 2vh;
+    margin: 0 .6vh 0 .1vh;
+}
+
+#subtitle {
+    font-size: 2vh;
+}
+
+#time {
+    margin-bottom: 1.2vh;
+}
+
+#title {
+    font-size: 4.5vh;
+    margin-right: 1vh;
+}
+
