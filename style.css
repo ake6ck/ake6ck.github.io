@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100dvh;
+    justify-content: space-evenly;
+    margin: 0 5dvw 0 5dvw;
+    width: 90dvw;
+}
+
+.word_box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.def {
+    display: flex;  
+    flex-direction: row;
+}
+
+.highlight {
+    background-color: black;
+    color: white;
+    margin: 0 .5dvw 0 .5dvw;;
+}
+
+@media (orientation: portrait) {
+    body {
+        font-size: 5dvw;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        font-size: 3dvh;
+    }
+}
