@@ -20,8 +20,9 @@ body {
 
 .photospread > img {
     aspect-ratio: 1;
+    border-radius: 2.5%;
     position: absolute;
-    transition: ease-out 0.25s;
+    transition: 0.25s ease-out;
     translate: -50% -75%;
 }
 
@@ -52,10 +53,29 @@ body {
     rotate: 0deg;
 }
 
-#name {
+#mobileclick{
+    display: none;
+}
+
+#altname, #name{
     color: white;
+    background-color: black;
     position: absolute;
+    transition: 0.25s ease-out ;
     translate: -50% 200%;
+}
+
+#altname {
+    opacity: 0;
+}
+
+.names:hover > #altname {
+    opacity: 1;
+    translate: 11% 200%;
+}
+
+.names:hover > #name {
+    translate: -90% 200%;
 }
 
 @media (orientation: portrait) {
@@ -64,13 +84,22 @@ body {
     }
 
     .photospread > img {
-    width: 50dvw;
+        width: 50dvw;
     }
 
-    #mobileclick{
-        position: absolute;
-        transition: ease-out 0.5s;
-        translate: -50% -75%;
+    .photospread:hover > #one {
+        width: 40dvw;
+        translate: 25% -80%;
+    }
+
+    .photospread:hover > #two {
+        width: 40dvw;
+        translate: -125% -80%;
+    }
+
+    .photospread:hover > #three {
+        width: 40dvw;
+        translate: -50% -80%;
     }
 
     .photospread:hover > #mobileclick {
@@ -84,11 +113,15 @@ body {
     }
 
     .photospread > img {
-    height: 30dvh;
+        height: 30dvh;
     }
+}
 
+@media (pointer:coarse) {
     #mobileclick{
-        display: none;
+        position: absolute;
+        transition: 0.5s ease-out;
+        translate: -50% -72.5%;
     }
 }
 
