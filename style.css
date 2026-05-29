@@ -53,10 +53,6 @@ body {
     rotate: 0deg;
 }
 
-#mobileclick{
-    display: none;
-}
-
 #altname, #name{
     color: white;
     background-color: black;
@@ -118,11 +114,17 @@ body {
 }
 
 @media (pointer:coarse) {
-    #mobileclick{
+    #mobileclick {
         display: block;
         position: absolute;
         transition: 0.5s ease-out;
         translate: -50% -72.5%;
+    }
+}
+
+@media (pointer:fine) {
+    #mobileclick {
+        display: none;
     }
 }
 
