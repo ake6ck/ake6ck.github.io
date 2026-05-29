@@ -119,6 +119,7 @@ body {
 
 @media (pointer:coarse) {
     #mobileclick{
+        display: block;
         position: absolute;
         transition: 0.5s ease-out;
         translate: -50% -72.5%;
