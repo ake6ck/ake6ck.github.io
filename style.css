@@ -63,7 +63,7 @@ body {
     position: fixed;
     top: 50%;
     transition: 0.5s ease-out;
-    transform: translate(-50%, -72.5%);
+    transform: translate(-50%, -75%);
 }
 
 #altname, #name{
@@ -114,6 +114,11 @@ body {
     .photospread:hover > #mobileclick {
         opacity: 0;
     }
+
+    .touch #mobileclick {
+        height: 50dvw;
+        width: 50dvw;
+    }
 }
 
 @media (orientation: landscape) {
@@ -123,6 +128,11 @@ body {
 
     .photospread > img {
         height: 30dvh;
+    }
+
+    .touch #mobileclick {
+        height: 30dvh;
+        width: 30dvh;
     }
 }
 
