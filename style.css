@@ -68,7 +68,6 @@ body {
     }
 
     #mobileclick{
-        animation: invertswap 2s infinite;
         position: absolute;
         transition: ease-out 0.5s;
         translate: -50% -75%;
