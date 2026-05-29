@@ -1,42 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
 }
 
 body {
-    display: flex;
-    height: 100dvh;
-    justify-content: space-evenly;
-    margin: 0 5dvw 0 5dvw;
-    width: 90dvw;
-}
-
-.word_box {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.def {
-    display: flex;  
-    flex-direction: row;
-}
-
-.highlight {
     background-color: black;
+    display: flex;
+    font-family: "Rowdies";
+    height: 100dvh;
+    justify-content: center;
+    width: 100dvw;
+}
+
+.photospread {
+    display: flex;
+}
+
+.photospread > img {
+    aspect-ratio: 1;
+    position: absolute;
+    transition: ease-out 0.25s;
+    translate: -50% -75%;
+}
+
+.photospread:hover > #one {
+    translate: 25% -75%;
+    rotate: 10deg;
+}
+
+.photospread:hover > #two {
+    translate: -125% -75%;
+    rotate: -5deg;
+}
+
+.photospread:hover > #three {
+    translate: -50% -75%;
+    rotate: 5deg;
+}
+
+#one {
+    rotate: -5deg;
+}
+
+#two {
+    rotate: 10deg;
+}
+
+#three {
+    rotate: 0deg;
+}
+
+#name {
     color: white;
-    margin: 0 .5dvw 0 .5dvw;;
+    position: absolute;
+    translate: -50% 200%;
 }
 
 @media (orientation: portrait) {
     body {
-        font-size: 5dvw;
+        font-size: 10dvw;
+    }
+
+    .photospread > img {
+    width: 50dvw;
+    }
+
+    #mobileclick{
+        animation: invertswap 2s infinite;
+        position: absolute;
+        transition: ease-out 0.5s;
+        translate: -50% -75%;
+    }
+
+    .photospread:hover > #mobileclick {
+        opacity: 0;
     }
 }
 
 @media (orientation: landscape) {
     body {
-        font-size: 3dvh;
+        font-size: 6dvh;
+    }
+
+    .photospread > img {
+    height: 30dvh;
+    }
+
+    #mobileclick{
+        display: none;
+    }
+}
+
+@keyframes invertswap {
+    0% {
+        filter: invert(0%);
+    }
+    50% {
+        filter: invert(100%);
+    }
+    100% {
+        filter: invert(0%);
     }
 }
