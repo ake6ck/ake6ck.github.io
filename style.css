@@ -59,6 +59,9 @@ body {
 
 .touch #mobileclick {
     display: block;
+    position: absolute;
+    transition: 0.5s ease-out;
+    translate: -50% -72.5%;
 }
 
 #altname, #name{
