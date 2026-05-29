@@ -41,6 +41,10 @@ body {
     rotate: 5deg;
 }
 
+.photospread:hover > #mobileclick {
+    opacity: 0;
+}
+
 #one {
     rotate: -5deg;
 }
@@ -109,10 +113,6 @@ body {
     .photospread:hover > #three {
         width: 40dvw;
         translate: -50% -80%;
-    }
-
-    .photospread:hover > #mobileclick {
-        opacity: 0;
     }
 
     .touch #mobileclick {
