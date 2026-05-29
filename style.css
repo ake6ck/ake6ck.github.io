@@ -53,6 +53,14 @@ body {
     rotate: 0deg;
 }
 
+#mobileclick {
+    display: none;
+}
+
+.touch #mobileclick {
+    display: block;
+}
+
 #altname, #name{
     color: white;
     background-color: black;
@@ -110,21 +118,6 @@ body {
 
     .photospread > img {
         height: 30dvh;
-    }
-}
-
-@media (pointer:coarse) {
-    #mobileclick {
-        display: block;
-        position: absolute;
-        transition: 0.5s ease-out;
-        translate: -50% -72.5%;
-    }
-}
-
-@media (pointer:fine) {
-    #mobileclick {
-        display: none;
     }
 }
 
